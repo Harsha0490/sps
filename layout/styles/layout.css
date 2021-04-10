@@ -116,7 +116,84 @@ q {font-style: italic;}
 
 #header div:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
 
+.clearfix {
+  overflow: auto;
+}
 
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -150px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 175px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#mySidenavv a {
+  position: fixed; /* Position them relative to the browser window */
+  right: -125px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 175px;
+  text-align: right; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 5px 0 0 5px; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenavv a:hover {
+  right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336; /* Red */
+}
+
+#contact {
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
+
+#aboutt {
+  top: 320px;
+  background-color: #4CAF50;
+}
+
+#blogg {
+  top: 380px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projectss {
+  top: 440px;
+  background-color: #f44336; /* Red */
+}
+
+#contactt {
+  top: 500px;
+  background-color: #555 /* Light Black */
+}
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro{padding:180px 0;}
@@ -126,10 +203,37 @@ q {font-style: italic;}
 #pageintro p:first-of-type{margin:0 0 20px 0; text-transform:uppercase; font-size:1.6rem; letter-spacing:5px;}
 #pageintro footer{margin-top:50px;}
 
+#team{}
 
+#team li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
+#team article{display:block; text-align:center; padding:35px 25px;}
+#team article *{margin:0; padding:0;}
+#team article figure{}
+#team article figure a{margin-bottom:35px;}
+#team article figure .imgover::before, #team article figure img{border-radius:50%;}
+#team article figure figcaption{line-height:1;}
+#team article em{display:block; margin-bottom:25px; font-style:normal; font-size:.8rem;}
+#team article p{}
+#team article footer{margin-top:35px;}
+#team article footer .faico{display:block; text-align:center;}
+#team article footer .faico li{display:inline-block; margin:0 12px 0 0;}
+#team article footer .faico a{display:block; width:auto; height:auto; line-height:1; font-size:1.2rem;}
+
+#team article{box-shadow:0px 0px 15px rgba(0,0,0,.1);}
+#team article:hover{color:inherit; background-color:#F4F4F4;}
+#team article footer .faico a{color:inherit; background:transparent;}
+#team article footer .faico .faicon-dribble:hover{color:#EA4C89;}
+#team article footer .faico .faicon-facebook:hover{color:#3B5998;}
+#team article footer .faico .faicon-google-plus:hover{color:#DB4A39;}
+#team article footer .faico .faicon-linkedin:hover{color:#0E76A8;}
+#team article footer .faico .faicon-twitter:hover{color:#00ACEE;}
+#team article footer .faico .faicon-vk:hover{color:#4E658E;}
+
+.imgover:hover::before{background:rgba(37,100,146,.35)/* #256492 */;}
+.imgover, .imgover:hover::after{color:#FFFFFF;}
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:30px 0;}
+.container{padding:30px 0px;}
 
 /* Content */
 .container .content{}
@@ -516,6 +620,7 @@ table a, #comments a{background-color:inherit;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+  .one_quarteer{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
 	#topbar{padding-top:15px; text-align:center;}
 	#topbar ul{margin:0 0 15px 0; line-height:normal;}
